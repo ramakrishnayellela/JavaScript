@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>JS checkboxvalidation</title>
+        <script>
+            function myfun()
+            {
+                var a=document.getElementById('ram');
+                if (a.checked==true){
+                    return a.checked=false;
+                }
+                else{
+                    return a.checked=true;
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        Check box : <input type="checkbox" id="ram">
+        <p>Click the check box</p>
+        <button type="button" onclick="myfun()">Clickme</button>
+
+    </body>
+</html>

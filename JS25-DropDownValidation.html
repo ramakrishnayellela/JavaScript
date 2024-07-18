@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>DropDown validation</title>
+        <script>
+            function myfun(){
+                const a=document.getElementById('123');
+                const b=a.value;
+                if(b=="#"){
+                    alert("please select an option !");
+                    return false;
+                }
+                return true;
+            }
+
+        </script>
+    </head>
+    <body>
+        <h3>Drop Down List Validation</h3>
+        <form action="loginsuccess.html" id="dropdownform" onsubmit="return myfun()">
+        Select Branch : <select id="123" name="DropDown" required>
+            <option value="#">select a country</option>
+            <option name="CSE" value="CSE">CSE</option>
+            <option name="ECE" value="ECE">ECE</option>
+            <option name="EEE" value="EEE">EEE</option>
+            <option name="CSD" value="CSD">CSD</option>
+        </select><br><br>
+        <input type="submit" value="submit">
+        </form>
+        </select>
+
+    </body>
+</html>

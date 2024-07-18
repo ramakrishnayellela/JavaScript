@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>checckbox validation</title>
+        <script>
+            function myfun(){
+                var a = document.getElementsByName('intrest');
+                let count=0;
+                for(i=0;i<a.length;i++){
+                    if(a[i].checked){
+                        count++;
+                    }
+                }
+                if(count==0){
+                    alert("select the checkbox !");
+                    return false;
+                }
+                /*else if(count==1){
+                    alert("selcted only one checkbox");
+                    return true;
+                }*/
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform" action="loginsuccess.html" onsubmit="return myfun()">
+        <h3>check box selection</h3>
+        <input type="checkbox" name="intrest" value="coding">coding<br>
+        <input type="checkbox" name="intrest" value="reading">reading<br>
+        <input type="checkbox" name="intrest" vlaue="playing">playing<br><br>
+        <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
